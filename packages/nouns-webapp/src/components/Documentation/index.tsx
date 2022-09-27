@@ -25,8 +25,8 @@ const Documentation = () => {
   );
   const compoundGovLink = (
     <Link
-      text={<Trans>Compound Governance</Trans>}
-      url="https://compound.finance/governance"
+      text={<Trans>Nouns DAO</Trans>}
+      url="https://nouns.wtf"
       leavesPage={true}
     />
   );
@@ -39,10 +39,7 @@ const Documentation = () => {
           </h1>
           <p className={classes.aboutText}>
             <Trans>
-              Nouns are an experimental attempt to improve the formation of on-chain avatar
-              communities. While projects such as {cryptopunksLink} have attempted to bootstrap
-              digital community and identity, Nouns attempt to bootstrap identity, community,
-              governance, and a treasury that can be used by the community.
+              Lab nouns are an attempt to provide builders and creators with access to capital and investment outside the tradational VC framework.
             </Trans>
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
@@ -59,40 +56,40 @@ const Documentation = () => {
             <Accordion.Body>
               <ul>
                 <li>
-                  <Trans>Nouns artwork is in the {publicDomainLink}.</Trans>
+                  <Trans>Lab ouns artwork is in the {publicDomainLink}.</Trans>
                 </li>
                 <li>
-                  <Trans>One Noun is trustlessly auctioned every 24 hours, forever.</Trans>
+                  <Trans>One Lab oun is trustlessly auctioned every 24 hours, forever.</Trans>
                 </li>
                 <li>
-                  <Trans>100% of Noun auction proceeds are trustlessly sent to the treasury.</Trans>
+                  <Trans>100% of Lab noun auction proceeds are trustlessly sent to the treasury.</Trans>
                 </li>
                 <li>
                   <Trans>Settlement of one auction kicks off the next.</Trans>
                 </li>
                 <li>
-                  <Trans>All Nouns are members of Nouns DAO.</Trans>
+                  <Trans>All Lab nouns are members of Lab nouns DAO.</Trans>
                 </li>
                 <li>
-                  <Trans>Nouns DAO uses a fork of {compoundGovLink}.</Trans>
+                  <Trans>Lab nouns DAO uses a fork of {compoundGovLink}.</Trans>
                 </li>
                 <li>
-                  <Trans>One Noun is equal to one vote.</Trans>
+                  <Trans>One Lab noun is equal to one vote.</Trans>
                 </li>
                 <li>
-                  <Trans>The treasury is controlled exclusively by Nouns via governance.</Trans>
+                  <Trans>The treasury is controlled exclusively by Lab nouns via governance.</Trans>
                 </li>
                 <li>
                   <Trans>Artwork is generative and stored directly on-chain (not IPFS).</Trans>
                 </li>
                 <li>
                   <Trans>
-                    No explicit rules exist for attribute scarcity; all Nouns are equally rare.
+                    No explicit rules exist for attribute scarcity; all Lab nouns are equally rare.
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Nounders receive rewards in the form of Nouns (10% of supply for first 5 years).
+                    Lab noun founders receive rewards in the form of Lab nouns (10% of supply for first 5 years).
                   </Trans>
                 </li>
               </ul>
@@ -106,29 +103,29 @@ const Documentation = () => {
             <Accordion.Body>
               <p className={classes.aboutText}>
                 <Trans>
-                  The Nouns Auction Contract will act as a self-sufficient Noun generation and
-                  distribution mechanism, auctioning one Noun every 24 hours, forever. 100% of
+                  The Lab nouns Auction Contract will act as a self-sufficient Lab noun generation and
+                  distribution mechanism, auctioning one Lab noun every 24 hours, forever. 100% of
                   auction proceeds (ETH) are automatically deposited in the Nouns DAO treasury,
-                  where they are governed by Noun owners.
+                  where they are governed by Lab noun owners.
                 </Trans>
               </p>
 
               <p className={classes.aboutText}>
                 <Trans>
                   Each time an auction is settled, the settlement transaction will also cause a new
-                  Noun to be minted and a new 24 hour auction to begin.{' '}
+                  Lab noun to be minted and a new 24 hour auction to begin.{' '}
                 </Trans>
               </p>
               <p>
                 <Trans>
                   While settlement is most heavily incentivized for the winning bidder, it can be
-                  triggered by anyone, allowing the system to trustlessly auction Nouns as long as
+                  triggered by anyone, allowing the system to trustlessly auction Lab nouns as long as
                   Ethereum is operational and there are interested bidders.
                 </Trans>
               </p>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2" className={classes.accordionItem}>
+          {/* <Accordion.Item eventKey="2" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>Nouns DAO</Trans>
             </Accordion.Header>
@@ -142,8 +139,8 @@ const Documentation = () => {
                 someone else as long as you own your Noun.
               </Trans>
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3" className={classes.accordionItem}>
+          </Accordion.Item> */}
+          {/* <Accordion.Item eventKey="3" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>Governance ‘Slow Start’</Trans>
             </Accordion.Header>
@@ -200,8 +197,8 @@ const Documentation = () => {
                 </Trans>
               </p>
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="4" className={classes.accordionItem}>
+          </Accordion.Item> */}
+          {/* <Accordion.Item eventKey="4" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>Noun Traits</Trans>
             </Accordion.Header>
@@ -234,8 +231,8 @@ const Documentation = () => {
                 You can experiment with off-chain Noun generation at the {playgroundLink}.
               </Trans>
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="5" className={classes.accordionItem}>
+          </Accordion.Item> */}
+          {/* <Accordion.Item eventKey="5" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>On-Chain Artwork</Trans>
             </Accordion.Header>
@@ -259,8 +256,8 @@ const Documentation = () => {
                 </Trans>
               </p>
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="6" className={classes.accordionItem}>
+          </Accordion.Item> */}
+          {/* <Accordion.Item eventKey="6" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>Noun Seeder Contract</Trans>
             </Accordion.Header>
@@ -284,8 +281,8 @@ const Documentation = () => {
                 </Trans>
               </p>
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="7" className={classes.accordionItem}>
+          </Accordion.Item> */}
+          {/* <Accordion.Item eventKey="7" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
               <Trans>Nounder's Reward</Trans>
             </Accordion.Header>
@@ -351,7 +348,7 @@ const Documentation = () => {
                 </Trans>
               </p>
             </Accordion.Body>
-          </Accordion.Item>
+          </Accordion.Item> */}
         </Accordion>
       </Col>
     </Section>
