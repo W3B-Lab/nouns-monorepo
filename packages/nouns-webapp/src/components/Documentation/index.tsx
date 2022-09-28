@@ -56,7 +56,7 @@ const Documentation = () => {
             <Accordion.Body>
               <ul>
                 <li>
-                  <Trans>W3B Lab nouns artwork is in the {publicDomainLink}.</Trans>
+                  <div>W3B Lab nouns artwork is in the {publicDomainLink}.</div>
                 </li>
                 <li>
                   <Trans>One Lab oun is trustlessly auctioned every 24 hours, forever.</Trans>
@@ -71,7 +71,7 @@ const Documentation = () => {
                   <Trans>All W3B Lab nouns are members of W3B Lab nouns DAO.</Trans>
                 </li>
                 <li>
-                  <Trans>W3B Lab nouns DAO uses a fork of {compoundGovLink}.</Trans>
+                  <div>W3B Lab nouns DAO uses a fork of {compoundGovLink}.</div>
                 </li>
                 <li>
                   <Trans>One Lab noun is equal to one vote.</Trans>
