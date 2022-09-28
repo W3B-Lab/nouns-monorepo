@@ -20,6 +20,7 @@
   display: inline;
   margin: 0;
   padding: 0;
+  color: #e2e2e2;
 }
 .emergencySettleButton:disabled {
   color: #8c8d92;
