@@ -5,23 +5,22 @@ import { useEtherBalance } from '@usedapp/core';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar, Container } from 'react-bootstrap';
-import testnetNoun from '../../assets/testnet-noun.png';
 import config, { CHAIN_ID } from '../../config';
 import { utils } from 'ethers';
 import { buildEtherscanHoldingsLink } from '../../utils/etherscan';
-import { ExternalURL, externalURL } from '../../utils/externalURL';
 import useLidoBalance from '../../hooks/useLidoBalance';
 import NavBarButton, { NavBarButtonStyle } from '../NavBarButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import NavBarTreasury from '../NavBarTreasury';
 import NavWallet from '../NavWallet';
 import { Trans } from '@lingui/macro';
-import React, { useState } from 'react';
-import NavLocaleSwitcher from '../NavLocaleSwitcher';
+import { useState } from 'react';
+import { ExternalURL, externalURL } from '../../utils/externalURL';
 
 const NavBar = () => {
   const activeAccount = useAppSelector(state => state.account.activeAccount);
@@ -62,7 +61,6 @@ const NavBar = () => {
             </Navbar.Brand>
             {Number(CHAIN_ID) !== 1 && (
               <Nav.Item>
-                <img className={classes.testnetImg} src={testnetNoun} alt="testnet noun" />
                 TESTNET
               </Nav.Item>
             )}
@@ -88,6 +86,20 @@ const NavBar = () => {
             onClick={() => setIsNavExpanded(!isNavExpanded)}
           />
           <Navbar.Collapse className="justify-content-end">
+            
+          <Nav.Link
+              href={externalURL(ExternalURL.notion)}
+              className={classes.nounsNavLink}
+              target="_blank"
+              rel="noreferrer"
+              onClick={closeNav}
+            >
+              <NavBarButton
+                buttonText={<Trans>W3B Lab</Trans>}
+                buttonIcon={<FontAwesomeIcon icon={faGlobe} />}
+                buttonStyle={nonWalletButtonStyle}
+              />
+            </Nav.Link>
             <Nav.Link as={Link} to="/vote" className={classes.nounsNavLink} onClick={closeNav}>
               <NavBarButton
                 buttonText={<Trans>DAO</Trans>}
@@ -96,7 +108,8 @@ const NavBar = () => {
               />
             </Nav.Link>
             <Nav.Link
-              href={externalURL(ExternalURL.notion)}
+              as={Link}
+              to="/coming-soon"
               className={classes.nounsNavLink}
               target="_blank"
               rel="noreferrer"
@@ -109,7 +122,8 @@ const NavBar = () => {
               />
             </Nav.Link>
             <Nav.Link
-              href={externalURL(ExternalURL.discourse)}
+              as={Link}
+              to="/coming-soon"
               className={classes.nounsNavLink}
               target="_blank"
               rel="noreferrer"
@@ -133,7 +147,7 @@ const NavBar = () => {
                 buttonStyle={nonWalletButtonStyle}
               />
             </Nav.Link>
-            <NavLocaleSwitcher buttonStyle={nonWalletButtonStyle} />
+            {/* <NavLocaleSwitcher buttonStyle={nonWalletButtonStyle} /> */}
             <NavWallet address={activeAccount || '0'} buttonStyle={nonWalletButtonStyle} />{' '}
           </Navbar.Collapse>
         </Container>

@@ -11,7 +11,7 @@ const Banner = () => {
       <Col lg={6}>
         <div className={classes.wrapper}>
           <h1>
-            <Trans>LAB NOUNS,</Trans>
+            <Trans>W3B Lab nouns,</Trans>
             <br />
             <Trans>For builders and creators</Trans>
           </h1>

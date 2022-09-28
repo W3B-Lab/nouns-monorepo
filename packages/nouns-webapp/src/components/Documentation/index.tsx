@@ -39,7 +39,7 @@ const Documentation = () => {
           </h1>
           <p className={classes.aboutText}>
             <Trans>
-              Lab nouns are an attempt to provide builders and creators with access to capital and investment outside the tradational VC framework.
+              W3B Lab nouns are an attempt to provide builders and creators with access to capital and investment outside the tradational VC framework.
             </Trans>
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
@@ -56,7 +56,7 @@ const Documentation = () => {
             <Accordion.Body>
               <ul>
                 <li>
-                  <Trans>Lab ouns artwork is in the {publicDomainLink}.</Trans>
+                  <Trans>W3B Lab nouns artwork is in the {publicDomainLink}.</Trans>
                 </li>
                 <li>
                   <Trans>One Lab oun is trustlessly auctioned every 24 hours, forever.</Trans>
@@ -68,28 +68,28 @@ const Documentation = () => {
                   <Trans>Settlement of one auction kicks off the next.</Trans>
                 </li>
                 <li>
-                  <Trans>All Lab nouns are members of Lab nouns DAO.</Trans>
+                  <Trans>All W3B Lab nouns are members of W3B Lab nouns DAO.</Trans>
                 </li>
                 <li>
-                  <Trans>Lab nouns DAO uses a fork of {compoundGovLink}.</Trans>
+                  <Trans>W3B Lab nouns DAO uses a fork of {compoundGovLink}.</Trans>
                 </li>
                 <li>
                   <Trans>One Lab noun is equal to one vote.</Trans>
                 </li>
                 <li>
-                  <Trans>The treasury is controlled exclusively by Lab nouns via governance.</Trans>
+                  <Trans>The treasury is controlled exclusively by W3B Lab nouns via governance.</Trans>
                 </li>
                 <li>
                   <Trans>Artwork is generative and stored directly on-chain (not IPFS).</Trans>
                 </li>
                 <li>
                   <Trans>
-                    No explicit rules exist for attribute scarcity; all Lab nouns are equally rare.
+                    No explicit rules exist for attribute scarcity; all W3B Lab nouns are equally rare.
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Lab noun founders receive rewards in the form of Lab nouns (10% of supply for first 5 years).
+                    Lab noun founders receive rewards in the form of W3B Lab nouns (10% of supply for first 5 years).
                   </Trans>
                 </li>
               </ul>
@@ -103,7 +103,7 @@ const Documentation = () => {
             <Accordion.Body>
               <p className={classes.aboutText}>
                 <Trans>
-                  The Lab nouns Auction Contract will act as a self-sufficient Lab noun generation and
+                  The W3B Lab nouns Auction Contract will act as a self-sufficient Lab noun generation and
                   distribution mechanism, auctioning one Lab noun every 24 hours, forever. 100% of
                   auction proceeds (ETH) are automatically deposited in the Nouns DAO treasury,
                   where they are governed by Lab noun owners.
@@ -119,7 +119,7 @@ const Documentation = () => {
               <p>
                 <Trans>
                   While settlement is most heavily incentivized for the winning bidder, it can be
-                  triggered by anyone, allowing the system to trustlessly auction Lab nouns as long as
+                  triggered by anyone, allowing the system to trustlessly auction W3B Lab nouns as long as
                   Ethereum is operational and there are interested bidders.
                 </Trans>
               </p>

@@ -15,8 +15,8 @@ import AuctionPage from './pages/Auction';
 import GovernancePage from './pages/Governance';
 import CreateProposalPage from './pages/CreateProposal';
 import VotePage from './pages/Vote';
-import NoundersPage from './pages/Nounders';
 import NotFoundPage from './pages/NotFound';
+import ComingSoon from './pages/ComingSoon';
 import Playground from './pages/Playground';
 import { CHAIN_ID } from './config';
 import relativeTime from 'dayjs/plugin/relativeTime';
@@ -60,12 +60,12 @@ function App() {
               path="/noun/:id"
               render={props => <AuctionPage initialAuctionId={Number(props.match.params.id)} />}
             />
-            <Route exact path="/nounders" component={NoundersPage} />
             <Route exact path="/create-proposal" component={CreateProposalPage} />
             <Route exact path="/vote" component={GovernancePage} />
             <Route exact path="/vote/:id" component={VotePage} />
             <Route exact path="/playground" component={Playground} />
             <Route exact path="/delegate" component={DelegatePage} />
+            <Route exact path="/coming-soon" component={ComingSoon} />
             <Route component={NotFoundPage} />
           </Switch>
           <Footer />
