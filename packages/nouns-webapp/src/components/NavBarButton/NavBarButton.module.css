@@ -81,7 +81,7 @@
 }
 
 .warmWallet {
-  background-color: var(--brand-warm-accent);
+  /* background-color: var(--brand-warm-accent); */
   border: 1px solid var(--brand-warm-border);
   border-radius: 10px;
   color: var(--brand-warm-dark-text);
