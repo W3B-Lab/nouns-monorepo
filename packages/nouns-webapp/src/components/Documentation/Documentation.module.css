@@ -28,6 +28,8 @@
 .accordionItem {
   margin-bottom: 2.5rem;
   border: none;
+  background-color: black;
+  color: #f2f2f2
 }
 
 .aboutText {
@@ -55,7 +57,7 @@
 }
 
 .accordionHeader button:not(.collapsed) {
-  color: #212529;
+  color: #dc1b98;
   background-color: transparent;
   box-shadow: none !important;
 }

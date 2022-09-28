@@ -14,9 +14,9 @@
   width: auto;
   padding: 10px 16px;
   height: 3rem;
-  color: white;
+  color: black;
   border: transparent;
-  background-color: var(--brand-black);
+  background-color: var(--brand-warm-background);
   font-weight: bold;
   letter-spacing: normal;
   font-size: 19px;

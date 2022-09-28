@@ -1,6 +1,6 @@
 :root {
   --brand-bg-green: #edf2f0;
-  --brand-dark-red: #d63c5e;
+  --brand-dark-red:#dc1b98;
   --brand-light-green: #6da886;
   --brand-black: #212529;
   /* Colors from Figma  */
@@ -11,8 +11,8 @@
   --brand-cool-accent: #e9ebf3;
   --brand-warm-background: #d5d7e0;
   --brand-warm-border: rgb(207, 189, 186);
-  --brand-warm-dark-text: #221b1a;
-  --brand-warm-light-text: #8f7e7c;
+  --brand-warm-dark-text: #ffffff;
+  --brand-warm-light-text: #ffffff;
   --brand-warm-accent: #f9f1f1;
   --brand-gray-dark-text: #14161b;
   --brand-gray-border: #e2e3eb;

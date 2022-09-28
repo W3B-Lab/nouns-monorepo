@@ -17,12 +17,12 @@ import AuctionActivityDateHeadline from '../AuctionActivityDateHeadline';
 import BidHistoryBtn from '../BidHistoryBtn';
 import config from '../../config';
 import { buildEtherscanAddressLink } from '../../utils/etherscan';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import NounInfoCard from '../NounInfoCard';
 import { useAppSelector } from '../../hooks';
 import BidHistoryModal from '../BidHistoryModal';
-import { Trans } from '@lingui/macro';
+// import { Trans } from '@lingui/macro';
 import Holder from '../Holder';
 
 const openEtherscanBidHistory = () => {
@@ -132,14 +132,15 @@ const AuctionActivity: React.FC<AuctionActivityProps> = (props: AuctionActivityP
           </Row>
         </div>
         {!auctionEnded && (
-          <Row className={classes.activityRow}>
-            <Col lg={12} className={classes.fomoNounsLink}>
-              <FontAwesomeIcon icon={faInfoCircle} />
-              <a href={'https://fomonouns.wtf'} target={'_blank'} rel="noreferrer">
-                <Trans>Help mint the next W3B Lab noun</Trans>
-              </a>
-            </Col>
-          </Row>
+          <></>
+          // <Row className={classes.activityRow}>
+          //   <Col lg={12} className={classes.fomoNounsLink}>
+          //     <FontAwesomeIcon icon={faInfoCircle} />
+          //     <a href={'https://fomonouns.wtf'} target={'_blank'} rel="noreferrer">
+          //       <Trans>Help mint the next W3B Lab noun</Trans>
+          //     </a>
+          //   </Col>
+          // </Row>
         )}
         {isLastAuction && (
           <>

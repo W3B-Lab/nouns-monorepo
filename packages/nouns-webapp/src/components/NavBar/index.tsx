@@ -50,21 +50,21 @@ const NavBar = () => {
     <>
       <Navbar
         expand="xl"
-        style={{ backgroundColor: 'transparent' }}
+        style={{ backgroundColor: 'black', color: 'white' }}
         className={classes.navBarCustom}
         expanded={isNavExpanded}
       >
         <Container style={{ maxWidth: 'unset' }}>
           <div className={classes.brandAndTreasuryWrapper}>
             <Navbar.Brand as={Link} to="/" className={classes.navBarBrand}>
-              <img src={logo} className={classes.navBarLogo} alt="Nouns DAO logo" />
+              <img src={logo} className={classes.navBarLogo} alt="W3B Lab Nouns DAO logo" />
             </Navbar.Brand>
             {Number(CHAIN_ID) !== 1 && (
               <Nav.Item>
                 TESTNET
               </Nav.Item>
             )}
-            <Nav.Item>
+            <Nav.Item >
               {treasuryBalance && (
                 <Nav.Link
                   href={daoEtherscanLink}
